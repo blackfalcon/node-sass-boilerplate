@@ -13,21 +13,21 @@
 
 /////// Typography configuration
 // *-------------------------------------------------------------------------------
-$font_size: 12;
+$font_size: 13;
 
-$heading_1: 46;
-$heading_2: 32;
-$heading_3: 28;
-$heading_4: 18;
-$heading_5: 18;
-$heading_6: 18;
+$heading_1: 35;
+$heading_2: 28;
+$heading_3: 18;
+$heading_4: 12;
+$heading_5: 12;
+$heading_6: 12;
 
 $line: $font_size * 1.5;
 
-$small_point_size: 10;
+$small_point_size: 11;
 $large_point_size: 14;
 
-$primary_font_family: #{"Helvetica Neue", Arial, sans-serif};
+$primary_font_family: #{"Segoe UI", Frutiger, "Frutiger Linotype", "Gill Sans", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;};
 $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif};
 $heading_font_family: #{"Helvetica Neue", Arial, sans-serif};
 
