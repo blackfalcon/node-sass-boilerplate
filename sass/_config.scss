@@ -23,13 +23,12 @@ $heading_5: 12;
 $heading_6: 12;
 
 $line: $font_size * 1.5;
-
 $small_point_size: 11;
 $large_point_size: 14;
 
 $primary_font_family: #{"Segoe UI", Frutiger, "Frutiger Linotype", "Gill Sans", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;};
 $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif};
-$heading_font_family: #{"Helvetica Neue", Arial, sans-serif};
+$heading_font_family: #{"Segoe UI", Frutiger, "Frutiger Linotype", "Gill Sans", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;};
 
 // $icon_font_alpha: #{'ico-fonts'};
 
@@ -65,13 +64,13 @@ $alpha_gray:      #333;           //black
 $white:                                #fff;
 
 // primary header font color
-$primary_header_color:                 $alpha_primary;
+$primary_header_color:                 $alpha_gray;
 
 // default heading font weight
 $heading_font_weight:                  normal;
 
 // primary font color for the app
-$primary_text:                         $alpha_primary;
+$primary_text:                         $alpha_gray;
 
 // default `href` link color
 $href_color:                           $delta_primary;
