@@ -171,3 +171,13 @@ $fox_gray:scale-color($alpha_gray, $lightness: 50%);
 $golf_gray:scale-color($alpha_gray, $lightness: 60%);
 $hotel_gray:scale-color($alpha_gray, $lightness: 70%);
 $india_gray:scale-color($alpha_gray, $lightness: 80%);
+
+// HACK - run this in SassMeister to get the hex values
+// $colors: (bravo, $bravo_gray) (charlie, $charlie_gray) (delta, $delta_gray) (echo, $echo_gray)
+//   (fox, $fox_gray) (golf, $golf_gray) (hotel, $hotel_gray) (india, $india_gray);
+
+// @each $color in $colors {
+//   .#{nth($color, 1)}-gray {
+//     color: nth($color, 2);
+//   }
+// }

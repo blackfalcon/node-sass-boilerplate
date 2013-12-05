@@ -30,15 +30,23 @@ $primary_font_family: #{"Segoe UI", Frutiger, "Frutiger Linotype", "Gill Sans", 
 $secondary_font_family: #{"Helvetica Neue", Arial, sans-serif};
 $heading_font_family: #{"Segoe UI", Frutiger, "Frutiger Linotype", "Gill Sans", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;};
 
-$icons: (list '\e601') (star '\e600') (file-alt '\e602') (ok '\e603') (remove '\e604') (release '\e605') (gear 'e\606');
+$list: '\e601';
+$star: '\e600';
+$file-alt: '\e602';
+$ok: '\e603';
+$remove: '\e604';
+$release: '\e605';
+$gear: '\e606';
+$search: '\e607';
+
 
 /////// Default webfont directory
 // *-------------------------------------------------------------------------------
-$fontDir: "fonts/";
+$fontDir: "/fonts/";
 
 /////// Default image directory
 // *-------------------------------------------------------------------------------
-$imgDir: "images/";
+$imgDir: "/images/";
 
 /////// OOCSS generic base colors
 // *-------------------------------------------------------------------------------
@@ -70,7 +78,7 @@ $heading_font_weight:                  normal;
 $primary_text:                         $alpha_gray;
 
 // default `href` link color
-$href_color:                           $delta_color;
+$href_color:                           $echo_color;
 
 // default shadow colors
 $shadow_color:                         fade-out($alpha_color, 0.5);
@@ -96,6 +104,7 @@ $webkit_tap_hightlight:                $delta_color;
 // overrides the default content selection color in the browser
 $selection_color:                      $charlie_color;
 $selection_text_color:                 $primary_text;
+
 
 
 /////// @media breakpoint defaults

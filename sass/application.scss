@@ -29,6 +29,9 @@
 @import "forms";
 @import "buttons";
 
+// Loading lib extends here to maintain correct placement in the cascade
+@import "lib/typography/extends/manifest";
+
 // UI Patterns and Modules
 // State is addressed within the component code itself
 @import "ui_patterns/manifest";

@@ -1,6 +1,6 @@
 // Include @font-face references
 //* -----------------------------------------------------------------------
-@include font-face(ico-fonts, ico-fonts);
+@include font-face('milliman-icons', milliman-icons);
 
 // Customize the following to fit your specifications
 // Commented out styles represent Toadstool's default bootstrap styles
@@ -49,7 +49,7 @@ a {
   color: $href_color;
   text-decoration: none;
   &:hover, &:active {
-    text-decoration: underline;
+    text-decoration: none;
   }
   &:visited {
     color: $href_color;

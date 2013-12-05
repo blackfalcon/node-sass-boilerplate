@@ -1,8 +1,9 @@
-$icon_font_alpha: ico-font !default;
+// this is a default list, look in the /_config.scss file for the project list of icons
+$icon_font_alpha: 'ico-font' !default;
 $icons: (expand '\e600') (menu '\e601') (twitter '\e602') !default;
 
 %ico-font-base {
-  font-family: $icon_font_alpha;
+  font-family: milliman-icons;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -11,10 +12,10 @@ $icons: (expand '\e600') (menu '\e601') (twitter '\e602') !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
-@each $icon in $icons {              // <-- create listing of PUA pseudo selectors
-  .icon-#{nth($icon, 1)}:before {
+@mixin icon($pua) {
+  &:before {
     @extend %ico-font-base;
-    content: nth($icon, 2);
-    margin-right: 0.25em
+    content: $pua;
+    margin-right: 0.25em;
   }
 }
