@@ -1,0 +1,59 @@
+.primary-nav {
+  width: em(80);
+  height: 100%;
+  background-color: $frame-background-color;
+  a {
+    position: relative;
+    display: block;
+    font-size: em($small_point_size);
+    padding-top: em(50);
+    padding-bottom: em(10);
+    text-transform: uppercase;
+    text-align: center;
+    color: $white;
+    width: 100%;
+    &:before {
+      position: absolute;
+      top: em(10);
+      left: calc(50% - 0.55em);
+      right: calc(50% - 0.55em);
+      font-size: 2em;
+    }
+    &.is-active, &:hover {
+      background-color: $delta_color;
+    }
+  }
+  [rel="releases"] {
+    @include icon($release, false);
+  }
+  [rel="features"] {
+    @include icon($star, false);
+  }
+    &:before {
+    }
+  [rel="docs"] {
+    @include icon($file-alt, false);
+    &:before {
+    }
+  }
+  [rel="admin"] {
+    @include icon($gear, false);
+  }
+}
+
+[data-notification] {
+  &:after {
+    font-size: 1rem;
+    display: block;
+    position: absolute;
+    content: attr(data-notification);
+    width: em(25);
+    height: em(25);
+    line-height: em(25);
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: $echo_color;
+    right: 10px;
+    top: 10px;
+  }
+}

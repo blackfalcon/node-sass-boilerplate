@@ -17,10 +17,9 @@ $line-height: em(40);
   height: $line-height;
   color: $white;
   .title {
-    float: left;
     text-align: center;
-    width: 50%;
-    margin: 0 auto;
+    width: 100%;
+    position: absolute;
     line-height: $line-height;
   }
   .utility {
