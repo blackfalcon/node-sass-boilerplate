@@ -6,12 +6,12 @@
 //   <a href="#" rel="admin">admin</a>
 // </nav>
 
-
 // Module Sass
 // ------------------------------------------------------------
 .primary-nav {
+  float: left;
   width: em(80);
-  height: 100%;
+  height: calc(100% - 40px);
   background-color: $frame-background-color;
   a {
     position: relative;

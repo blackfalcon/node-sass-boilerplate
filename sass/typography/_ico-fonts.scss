@@ -1,8 +1,12 @@
 // this is a default list, look in the /_config.scss file for the project list of icons
+// ---------------------------------------------------------------------------------
 $icon_font_alpha: 'ico-font' !default;
 $default_ico_margin: true !default;
 $icons: (expand '\e600') (menu '\e601') (twitter '\e602') !default;
 
+
+// Placeholder selector for repeated use
+// ---------------------------------------------------------------------------------
 %ico-font-base {
   font-family: milliman-icons;
   speak: none;
@@ -13,6 +17,16 @@ $icons: (expand '\e600') (menu '\e601') (twitter '\e602') !default;
   -moz-osx-font-smoothing: grayscale;
 }
 
+
+// mixin for in selector use
+// ---------------------------------------------------------------------------------
+
+// example use
+// .block {
+//   attribute: value;
+//   @include icon($star);
+// }
+
 @mixin icon($pua, $margin: $default_ico_margin) {
   &:before {
     @extend %ico-font-base;
@@ -22,3 +36,12 @@ $icons: (expand '\e600') (menu '\e601') (twitter '\e602') !default;
     }
   }
 }
+
+
+
+// This project makes use of icomoon.io custom ico-font library.
+// ---------------------------------------------------------------------------------
+// For full SVG versions, see http://icomoon.io/#icons
+
+// the complete Font Awesome lib is available at
+// http://commons.wikimedia.org/w/index.php?search=font+awesome&title=Special%3ASearch&uselang=en

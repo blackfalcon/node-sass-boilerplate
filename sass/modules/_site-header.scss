@@ -1,6 +1,6 @@
 // Theme color variables
 $frame-background-color: $bravo_gray;
-$line-height: em(40);
+$header-height: 40;
 
 
 // Module Sass
@@ -14,19 +14,19 @@ $line-height: em(40);
   }
   text-transform: uppercase;
   width: 100%;
-  height: $line-height;
+  height: em($header-height);
   color: $white;
   .title {
     text-align: center;
     width: 100%;
     position: absolute;
-    line-height: $line-height;
+    line-height: em($header-height);
   }
   .utility {
     float: right;
     a {
       display: inline-block;
-      line-height: $line-height;
+      line-height: em($header-height);
       padding: 0 em(10) 0 0;
     }
   }
