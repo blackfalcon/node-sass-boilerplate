@@ -1,1 +1,15 @@
 @import "lib/buttons/manifest";
+
+// Button UI is managed via lib code
+// Update design elements via variables in the config.scss file
+
+// Example markup
+// <button>this is a button</button>
+// <button disabled>this is a disabled button</button>
+
+// See all markup examples at /views/modules/forms.ejs
+
+
+button, a.button, input[type=button], input[type=submit] {
+  @include button-flat;
+}

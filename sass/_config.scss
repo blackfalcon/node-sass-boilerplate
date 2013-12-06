@@ -108,15 +108,16 @@ $selection_text_color:                 $primary_text;
 
 /////// button default
 // *-------------------------------------------------------------------------------
-// $button-color:  $button-color;
-// $button-text-color: $white;
+// $button-color:  $white;
+// $button-text-color: $primary_text;
 // $button-line-height: 32;
 // $button-border-radius: 3;
-// $button-padding: 20;
-// $button-font-size: 18;
-// $button-weight: bold;
-// $button-text-shadow: true;
-// $button-box-shadow: true;
+// $button-margin: 10;
+$button-padding: 10;
+$button-font-size: 12;
+$button-weight: normal;
+$button-shadow-color: transparentize($alpha_gray, 0.2);
+// $button-mobile-width: 100%;
 
 
 /////// @media breakpoint defaults

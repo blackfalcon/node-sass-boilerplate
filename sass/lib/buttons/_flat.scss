@@ -1,48 +1,63 @@
+// Stipe comes with a series of pre-designed buttons that are easily useable and configutable
+// gloss-default, shiny-default, flat-default and three-dee
+// -----------------------------------------------------------
+
 // Default values - edit in `_config.scss` file
 // -----------------------------------------------------------
-$button-color:  $alpha_color !default;
-$button-text-color: $white !default;
+$button-color:  $white !default;
+$button-text-color: $primary_text !default;
 $button-line-height: 32 !default;
 $button-border-radius: 3 !default;
 $button-padding: 20 !default;
+$button-margin: 10 !default;
 $button-font-size: 18 !default;
 $button-weight: bold !default;
-$button-text-shadow: true !default;
-$button-box-shadow: true !default;
+$button-shadow-color: transparentize($alpha_gray, 0.5) !default;
+$button-mobile-width: 100% !default;
 
+// button-default
+// -----------------------------------------------------------
+@mixin button-default ($text-color: $button-text-color, $line-height: $button-line-height, $border-radius: $button-border-radius, $padding: $button-padding, $font-size: $button-font-size, $weight: $button-weight, $margin: $button-margin){
+  color: $text-color;
+  line-height: em($line-height);
+  border-radius: em($border-radius);
+  padding: 0 em($padding);
+  font-size: em($font-size);
+  font-weight: $weight;
+  margin-bottom: em($margin);
+  &[disabled] {
+    color: transparentize($text-color, 0.4);
+  }
+}
 
 // flat-default
 // -----------------------------------------------------------
-@mixin flat-default ($color: $button-color, $text-shadow: $button-text-shadow, $box-shadow: $button-box-shadow){
+@mixin button-flat ($color: $button-color){
   $base-color: $color;
   $grad-1: darken($base-color, 8%);
   $dark-color: darken($base-color, 20%);
   $highlight-color: lighten($base-color, 50%);
 
   background-color: $base-color;
-  @include filter-gradient($grad-1, $base-color, vertical); // IE6-9
-  @include background-image(linear-gradient(top, $grad-1 0%,$base-color 75%));
-
   border: 1px solid $dark-color;
+  box-shadow: 0 1px 3px -1px $button-shadow-color;
+  text-transform: uppercase;
 
   @include button-default;
 
-  @if $text-shadow == true {
-    text-shadow: 0px 1px 3px transparentize($dark-color, 0.5);
-  }
-  @if $box-shadow == true {
-    box-shadow: 0 em(2) em(6) em(0) $shadow-color, $highlight-color 0 1px 0 inset;
+  &:hover {
+    background-color: darken($base-color, 10%);
   }
 
-  &:hover {
-    $base-color: darken($base-color, 10%);
-    $grad-1: darken($grad-1, 10%);
-    background-color: $base-color;
-    @include filter-gradient($grad-1, $base-color, vertical); // IE6-9
-    @include background-image(linear-gradient(top, $grad-1 0%,$base-color 75%));
+  &[disabled], &.disabled {
+    background-color: darken($base-color, 10%);
+    &:hover {
+      background-color: darken($base-color, 10%);
+      cursor: not-allowed;
+    }
   }
 
   @media #{$mobile} {
-    width: 100%;
+    width: $button-mobile-width;
   }
 }
