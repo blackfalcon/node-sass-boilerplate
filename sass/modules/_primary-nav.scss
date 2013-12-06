@@ -1,3 +1,14 @@
+// Example markup
+// <nav class="primary-nav">
+//   <a href="#" rel="releases" class="is-active">releases</a>
+//   <a href="#" rel="features">features</a>
+//   <a href="#" rel="docs" data-notification="3">docs</a>
+//   <a href="#" rel="admin">admin</a>
+// </nav>
+
+
+// Module Sass
+// ------------------------------------------------------------
 .primary-nav {
   width: em(80);
   height: 100%;
@@ -39,21 +50,10 @@
   [rel="admin"] {
     @include icon($gear, false);
   }
-}
-
-[data-notification] {
-  &:after {
-    font-size: 1rem;
-    display: block;
-    position: absolute;
-    content: attr(data-notification);
-    width: em(25);
-    height: em(25);
-    line-height: em(25);
-    font-weight: bold;
-    border-radius: 50%;
-    background-color: $echo_color;
-    right: 10px;
-    top: 10px;
+  [data-notification] {
+    &:after {
+      top: em(10);
+      right: em(10);
+    }
   }
 }

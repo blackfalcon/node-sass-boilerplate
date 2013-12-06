@@ -1,0 +1,33 @@
+// Any element with the data-attribute of `data-notification` will get the following style rules
+// Example
+// <a href="#" rel="docs" data-notification="3">docs</a>
+
+// Positioning
+// ----------------------------------------
+// There is no default positioning of this element other then `absolute`
+// When using this withing a module, make sure to adjust it's positioning per that module
+
+// .example-custom-module {
+//   [data-notification] {
+//     &:after {
+//       top: em(10);
+//       left: em(10);
+//     }
+//   }
+// }
+
+
+[data-notification] {
+  &:after {
+    font-size: 1rem;
+    display: block;
+    position: absolute;
+    content: attr(data-notification); // CSS will display the value of the attribute in the view
+    width: em(25);
+    height: em(25);
+    line-height: em(25);
+    font-weight: bold;
+    border-radius: 50%;
+    background-color: $echo_color;
+  }
+}
