@@ -1,0 +1,24 @@
+// Tab bar configurations
+// *-------------------------------------------------------------------------------
+$tab-text-color: $charlie_gray;
+$tab-background-color: $mute-backgrund;
+$tab-bar-margin: 40;
+$tab-bar-height: 60;
+
+// Tab bar CSS rules
+// *-------------------------------------------------------------------------------
+.tab-bar {
+  @include display-flex;
+  @extend %transform-uppercase;
+  margin-bottom: em($tab-bar-margin);
+  a {
+    @include flex;
+    color: $tab-text-color;
+    line-height: em($tab-bar-height);
+    background-color: $tab-background-color;
+    text-align: center;
+    &:hover, &.is-active {
+      background-color: $white;
+    }
+  }
+}

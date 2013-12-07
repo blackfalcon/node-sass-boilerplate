@@ -86,6 +86,9 @@ $shadow_color:                         fade-out($alpha_color, 0.5);
 // default border color
 $border_color:                         $alpha_color;
 
+// Global use mute gray background color
+$mute-backgrund:                       scale-color($india_gray, $lightness: 80%);
+
 
 
 /////// HTML 5 feature colors
@@ -118,7 +121,6 @@ $button-font-size: 12;
 $button-weight: normal;
 $button-shadow-color: transparentize($alpha_gray, 0.2);
 // $button-mobile-width: 100%;
-
 
 /////// @media breakpoint defaults
 // *-------------------------------------------------------------------------------

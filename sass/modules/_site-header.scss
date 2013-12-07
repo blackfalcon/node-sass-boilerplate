@@ -5,6 +5,7 @@ $header-height: 40;
 
 // Module Sass
 .site-header {
+  @extend %transform-uppercase;
   background: {
     color: $frame-background-color;
     image: url("#{$imgDir}logo.svg");
@@ -12,7 +13,6 @@ $header-height: 40;
     size: em(120);
     position: em(5) em(5);
   }
-  text-transform: uppercase;
   width: 100%;
   height: em($header-height);
   color: $white;
@@ -28,6 +28,10 @@ $header-height: 40;
       display: inline-block;
       line-height: em($header-height);
       padding: 0 em(10) 0 0;
+      margin-right: em(20);
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }
