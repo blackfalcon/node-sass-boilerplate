@@ -87,7 +87,7 @@ $shadow-color:                         fade-out($alpha-color, 0.5);
 $border-color:                         $alpha-color;
 
 // Global use mute gray background color
-$mute-backgrund:                       scale-color($india-gray, $lightness: 80%);
+$mute-background:                      scale-color($india-gray, $lightness: 80%);
 
 
 
@@ -127,6 +127,8 @@ $button-shadow-color: transparentize($alpha-gray, 0.2);
 /////// Default layout styles
 // *-------------------------------------------------------------------------------
 $default-article-padding: 40;
+
+
 
 /////// Form configurations
 // *-------------------------------------------------------------------------------

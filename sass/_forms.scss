@@ -3,6 +3,7 @@
 // *-------------------------------------------------------------------------------
 
 input[type=email], input[type=password], input[type=text], input[type=number] {
+  outline: none;
   font-size: 1.1em;
   color: $form-text-color;
   border: 1px solid $form-border-color;

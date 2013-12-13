@@ -16,5 +16,6 @@ body, html {
   }
   > article {
     padding: 0 em($default-article-padding);
+    padding-bottom: 200px;
   }
 }

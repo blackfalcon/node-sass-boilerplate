@@ -1,0 +1,25 @@
+$default-badge: $delta-shade-echo;
+$merge: $bravo-shade-charlie;
+$merged: $bravo-tint-bravo;
+
+.badge {
+  color: $white;
+  display: inline-block;
+  padding: 0 em(10);
+  background-color: $default-badge;
+  text-transform: uppercase;
+  &[data-badge] {
+    &:after {
+      content: attr(data-badge);
+      text-transform: uppercase;
+    }
+  }
+}
+
+$badges: (merged $merged) (merge $merge);
+
+@each $badge in $badges {
+  [data-badge=#{nth($badge, 1)}] {
+    background-color: nth($badge, 2);
+  }
+}

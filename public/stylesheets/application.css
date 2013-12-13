@@ -182,6 +182,7 @@ a {
   -moz-osx-font-smoothing: grayscale; }
 
 input[type=email], input[type=password], input[type=text], textarea, input[type=number] {
+  outline: none;
   font-size: 1.1em;
   color: #363636;
   border: 1px solid #c3c3c3;
@@ -202,10 +203,20 @@ label {
   label:after {
     content: ":"; }
 
+table {
+  width: 100%;
+  border-collapse: collapse; }
+  table th, table td {
+    padding: 1.53846em 0.38462em; }
+  table thead {
+    text-align: left; }
+  table tbody tr:nth-child(odd) {
+    background-color: #f7f7f7; }
+
 button, a.button, input[type=button], input[type=submit] {
   background-color: white;
   border: 1px solid #cccccc;
-  box-shadow: 0 1px 3px -1px rgba(54, 54, 54, 0.8);
+  box-shadow: 0 1px 1px -1px rgba(54, 54, 54, 0.8);
   text-transform: uppercase;
   color: #363636;
   line-height: 2.46154em;
@@ -268,6 +279,22 @@ fieldset input[type=checkbox] + label {
 .primary-nav.fixed {
   position: fixed;
   top: 0; }
+
+.badge {
+  color: white;
+  display: inline-block;
+  padding: 0 0.76923em;
+  background-color: #126e93;
+  text-transform: uppercase; }
+  .badge[data-badge]:after {
+    content: attr(data-badge);
+    text-transform: uppercase; }
+
+[data-badge=merged] {
+  background-color: #87ce55; }
+
+[data-badge=merge] {
+  background-color: #61a035; }
 
 .site-header {
   position: relative;
@@ -366,4 +393,5 @@ body, html {
   .site-section.fixed {
     margin-left: 6.15385em; }
   .site-section > article {
-    padding: 0 3.07692em; }
+    padding: 0 3.07692em;
+    padding-bottom: 200px; }

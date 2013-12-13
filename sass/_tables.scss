@@ -1,0 +1,17 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  th, td {
+    padding: em(20) em(5);
+  }
+  thead {
+    text-align: left;
+  }
+  tbody {
+    tr {
+      &:nth-child(odd) {
+        background-color: $mute-background;
+      }
+    }
+  }
+}
