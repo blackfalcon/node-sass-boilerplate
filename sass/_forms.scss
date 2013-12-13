@@ -1,0 +1,33 @@
+
+/////// Base form element UI
+// *-------------------------------------------------------------------------------
+
+input[type=email], input[type=password], input[type=text], input[type=number] {
+  font-size: 1.1em;
+  color: $primary_text;
+  border: 1px solid $form-border-color;
+  border-radius: 0;
+  display: block;
+  padding: em(10);
+  width: 100%;
+  margin-bottom: 1.0em;
+  -webkit-appearance: none;
+}
+
+textarea {
+  @extend input[type=text];
+  height: 10em;
+}
+
+// not represented in the style guide view
+input[disabled], textarea[disabled], select[disabled], .disabled {
+  // currently undefined
+}
+
+label {
+  display: block;
+  margin-bottom: em(5);
+  &:after {
+    content: ":";
+  }
+}

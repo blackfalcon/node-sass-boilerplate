@@ -8,7 +8,8 @@
 html {
   font: em($font_size, 16) $primary_font_family;
   line-height: baseline($font_size);
-  color: $primary_text
+  color: $primary_text;
+  -webkit-font-smoothing: antialiased;
 }
 
 // Heading CSS rules

@@ -6,6 +6,8 @@ $header-height: 40;
 // Module Sass
 .site-header {
   @extend %transform-uppercase;
+  position: relative;
+  z-index: 1001;
   background: {
     color: $frame-background-color;
     image: url("#{$imgDir}logo.svg");

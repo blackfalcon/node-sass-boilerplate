@@ -12,4 +12,11 @@
 
 button, a.button, input[type=button], input[type=submit] {
   @include button-flat;
+  -webkit-appearance: none;
+}
+
+fieldset {
+  button {
+    display: block;
+  }
 }

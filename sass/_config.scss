@@ -122,6 +122,18 @@ $button-weight: normal;
 $button-shadow-color: transparentize($alpha_gray, 0.2);
 // $button-mobile-width: 100%;
 
+
+/////// Form configurations
+// *-------------------------------------------------------------------------------
+$form-border-color: $hotel_gray;
+
+
+
+/////// Primary Nav configurations
+// *-------------------------------------------------------------------------------
+$primary-nav-width: em(80);
+
+
 /////// @media breakpoint defaults
 // *-------------------------------------------------------------------------------
 $tablet:                    "screen and (max-width: 64em)";

@@ -1,4 +1,7 @@
 [rel=search] {
   color: $white;
   @include icon($search);
+  &:visited {
+    color: $white;
+  }
 }

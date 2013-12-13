@@ -15,11 +15,6 @@ $box: border-box;
   @include box-sizing;
 }
 
-body {
-  font-size: 100%;
-  -webkit-font-smoothing: antialiased;
-}
-
 article, aside, figure, footer, header, hgroup, nav, section {
   display: block;
 }

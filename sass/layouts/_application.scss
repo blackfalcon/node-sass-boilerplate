@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+}
+
+
 body, html {
   height: 100%;
 }
@@ -6,4 +11,5 @@ body, html {
   width: calc(100% - 80px);
   height: calc(100% - 40px);
   float: left;
+  margin-left: em($primary-nav-width);
 }
