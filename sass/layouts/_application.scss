@@ -11,5 +11,7 @@ body, html {
   width: calc(100% - 80px);
   height: calc(100% - 40px);
   float: left;
-  margin-left: em($primary-nav-width);
+  &.fixed {
+    margin-left: em($primary-nav-width);
+  }
 }

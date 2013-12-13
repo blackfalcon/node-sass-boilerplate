@@ -265,6 +265,10 @@ fieldset input[type=checkbox] + label {
   fieldset input[type=checkbox] + label:after {
     content: ''; }
 
+.primary-nav.fixed {
+  position: fixed;
+  top: 0; }
+
 .site-header {
   position: relative;
   z-index: 1001;
@@ -305,10 +309,7 @@ fieldset input[type=checkbox] + label {
   float: left;
   width: 6.15385em;
   height: 100%;
-  background-color: #4a4a4a;
-  position: fixed;
-  top: 0;
-  padding-top: 3.07692em; }
+  background-color: #4a4a4a; }
   .primary-nav a {
     position: relative;
     display: block;
@@ -361,5 +362,6 @@ body, html {
 .site-section {
   width: calc(100% - 80px);
   height: calc(100% - 40px);
-  float: left;
-  margin-left: 6.15385em; }
+  float: left; }
+  .site-section.fixed {
+    margin-left: 6.15385em; }

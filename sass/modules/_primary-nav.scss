@@ -6,8 +6,6 @@
 //   <a href="#" rel="admin">admin</a>
 // </nav>
 
-$primary-nav-width: 80;
-
 
 // Module Sass
 // ------------------------------------------------------------
@@ -16,9 +14,9 @@ $primary-nav-width: 80;
   width: em($primary-nav-width);
   height: 100%;
   background-color: $frame-background-color;
-  position: fixed;
-  top: 0;
-  padding-top: em(40);
+  &.fixed {
+    @extend %fixed;
+  }
   a {
     @extend %transform-uppercase;
     position: relative;
