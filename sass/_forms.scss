@@ -4,7 +4,7 @@
 
 input[type=email], input[type=password], input[type=text], input[type=number] {
   font-size: 1.1em;
-  color: $primary_text;
+  color: $form-text-color;
   border: 1px solid $form-border-color;
   border-radius: 0;
   display: block;

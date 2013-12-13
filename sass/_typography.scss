@@ -6,9 +6,9 @@
 // Commented out styles represent Toadstool's default bootstrap styles
 //* -----------------------------------------------------------------------
 html {
-  font: em($font_size, 16) $primary_font_family;
-  line-height: baseline($font_size);
-  color: $primary_text;
+  font: em($font-size, 16) $primary-font-family;
+  line-height: baseline($font-size);
+  color: $primary-text;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -20,39 +20,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-  @include text($heading_2);
+  @include text($heading-2);
 }
 
 h3 {
-  @include text($heading_3);
+  @include text($heading-3);
 }
 
 h4 {
-  @include text($heading_4);
+  @include text($heading-4);
 }
 
 h5 {
-  @include text($heading_5);
+  @include text($heading-5);
 }
 
 h6 {
-  @include text($heading_6);
+  @include text($heading-6);
 }
 
 // Standard body text support
 // -----------------------------------------------------------------------
 p {
-  margin-bottom: baseline-margin($font_size);
+  margin-bottom: baseline-margin($font-size);
   text-indent: 0;
 }
 
 a {
-  color: $href_color;
+  color: $href-color;
   text-decoration: none;
   &:hover, &:active {
     text-decoration: none;
   }
   &:visited {
-    color: $href_color;
+    color: $href-color;
   }
 }
