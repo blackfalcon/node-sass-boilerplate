@@ -172,7 +172,7 @@ a {
   a:visited {
     color: #ff6625; }
 
-[rel=search]:before, .primary-nav [rel="releases"]:before, .primary-nav [rel="features"]:before, .primary-nav [rel="docs"]:before, .primary-nav [rel="admin"]:before {
+[data-bind*=edit]:before, [data-bind*=save]:before, [data-bind*=cancel]:before, [rel=search]:before, .primary-nav [rel="releases"]:before, .primary-nav [rel="features"]:before, .primary-nav [rel="docs"]:before, .primary-nav [rel="admin"]:before {
   font-family: milliman-icons;
   speak: none;
   font-style: normal;
@@ -241,6 +241,30 @@ button, a.button, input[type=button], input[type=submit] {
 
 fieldset button {
   display: block; }
+
+[data-bind*=edit]:before {
+  content: '\e608';
+  margin-right: 0.25em; }
+
+[data-bind*=save] {
+  background-color: #1ba5dc;
+  border-color: #1583af;
+  color: white; }
+  [data-bind*=save]:before {
+    content: '\e609';
+    margin-right: 0.25em; }
+  [data-bind*=save]:hover {
+    background-color: #12739a; }
+
+[data-bind*=cancel] {
+  background-color: #e51a21;
+  border-color: #b7151d;
+  color: white; }
+  [data-bind*=cancel]:before {
+    content: '\e604';
+    margin-right: 0.25em; }
+  [data-bind*=cancel]:hover {
+    background-color: #a01217; }
 
 .logo a {
   text-indent: 100%;

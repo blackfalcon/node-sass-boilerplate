@@ -9,6 +9,9 @@
 
 // See all markup examples at /views/modules/forms.ejs
 
+$save-action-color: $delta-shade-bravo;
+$cancel-action-color: $alpha-shade-bravo;
+
 
 button, a.button, input[type=button], input[type=submit] {
   @include button-flat;
@@ -18,5 +21,29 @@ button, a.button, input[type=button], input[type=submit] {
 fieldset {
   button {
     display: block;
+  }
+}
+
+[data-bind*=edit] {
+  @include icon($edit);
+}
+
+[data-bind*=save] {
+  @include icon($save);
+  background-color: $save-action-color;
+  border-color: darken($save-action-color, 10%);
+  color: $white;
+  &:hover {
+    background-color: shade($save-action-color, 30%);
+  }
+}
+
+[data-bind*=cancel] {
+  @include icon($remove);
+  background-color: $cancel-action-color;
+  border-color: darken($cancel-action-color, 10%);
+  color: $white;
+  &:hover {
+    background-color: shade($cancel-action-color, 30%);
   }
 }
