@@ -365,3 +365,5 @@ body, html {
   float: left; }
   .site-section.fixed {
     margin-left: 6.15385em; }
+  .site-section > article {
+    padding: 0 3.07692em; }
