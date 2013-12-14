@@ -320,6 +320,26 @@ fieldset input[type=checkbox] + label {
 [data-badge=merge] {
   background-color: #61a035; }
 
+.nav-tabs {
+  display: -webkit-flex;
+  display: flex;
+  text-transform: uppercase;
+  text-align: center; }
+  .nav-tabs a {
+    -webkit-flex: 1;
+    flex: 1;
+    line-height: 3em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent transparent #c3c3c3 transparent;
+    color: #363636; }
+    .nav-tabs a:hover {
+      color: #ff6625; }
+    .nav-tabs a.is-active {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #c3c3c3 #c3c3c3 transparent #c3c3c3; }
+
 .site-header {
   position: relative;
   z-index: 1001;

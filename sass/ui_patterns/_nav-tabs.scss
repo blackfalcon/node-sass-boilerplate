@@ -1,0 +1,27 @@
+.nav-tabs {
+  @include display-flex;
+  text: {
+    transform: uppercase;
+    align: center;
+  }
+  a {
+    @include flex;
+    line-height: 3em;
+    border: {
+      width: 1px;
+      style: solid;
+      color: transparent transparent $form-border-color transparent;
+    }
+    color: $primary-text;
+    &:hover {
+      color: $href-color;
+    }
+    &.is-active {
+      border: {
+        width: 1px;
+        style: solid;
+        color: $form-border-color $form-border-color transparent $form-border-color;
+      }
+    }
+  }
+}
