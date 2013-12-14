@@ -172,7 +172,7 @@ a {
   a:visited {
     color: #ff6625; }
 
-[data-bind*=edit]:before, [data-bind*=save]:before, [data-bind*=cancel]:before, [rel=search]:before, .primary-nav [rel="releases"]:before, .primary-nav [rel="features"]:before, .primary-nav [rel="docs"]:before, .primary-nav [rel="admin"]:before {
+[data-bind*=edit]:before, [data-bind*=save]:before, [data-bind*=cancel]:before, [rel=search]:before, .block-listing button:before, .primary-nav [rel="releases"]:before, .primary-nav [rel="features"]:before, .primary-nav [rel="docs"]:before, .primary-nav [rel="admin"]:before {
   font-family: milliman-icons;
   speak: none;
   font-style: normal;
@@ -200,12 +200,11 @@ textarea {
 label {
   display: block;
   margin-bottom: 0.38462em; }
-  label:after {
-    content: ":"; }
 
 table {
   width: 100%;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  margin-bottom: 3.07692em; }
   table th, table td {
     padding: 1.53846em 0.38462em; }
   table thead {
@@ -339,6 +338,30 @@ fieldset input[type=checkbox] + label {
       border-width: 1px;
       border-style: solid;
       border-color: #c3c3c3 #c3c3c3 transparent #c3c3c3; }
+
+.block-listing {
+  position: relative;
+  padding: 1.53846em; }
+  .block-listing:nth-of-type(odd) {
+    background-color: #f7f7f7; }
+  .block-listing:last-of-type {
+    margin-bottom: 3.07692em; }
+  .block-listing ul, .block-listing div {
+    display: inline-block; }
+  .block-listing .user {
+    font-weight: bold; }
+  .block-listing .listing-info {
+    width: 20%;
+    vertical-align: top; }
+  .block-listing .message {
+    width: 65%; }
+  .block-listing .actions {
+    position: absolute;
+    top: 1.53846em;
+    right: 1.53846em; }
+  .block-listing button:before {
+    content: '\e608';
+    margin-right: 0.25em; }
 
 .site-header {
   position: relative;

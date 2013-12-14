@@ -1,0 +1,31 @@
+.block-listing {
+  position: relative;
+  padding: em(20);
+  &:nth-of-type(odd) {
+    background-color: $mute-background;
+  }
+  &:last-of-type {
+    margin-bottom: em(40);
+  }
+  ul, div {
+    display: inline-block;
+  }
+  .user {
+    font-weight: bold;
+  }
+  .listing-info {
+    width: 20%;
+    vertical-align: top;
+  }
+  .message {
+    width: 65%;
+  }
+  .actions {
+    position: absolute;
+    top: em(20);
+    right: em(20);
+  }
+  button {
+    @include icon($edit);
+  }
+}

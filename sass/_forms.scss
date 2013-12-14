@@ -28,7 +28,4 @@ input[disabled], textarea[disabled], select[disabled], .disabled {
 label {
   display: block;
   margin-bottom: em(5);
-  &:after {
-    content: ":";
-  }
 }
